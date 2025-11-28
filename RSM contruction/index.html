@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSM Developers - Premium Construction Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader">
+            <div class="logo">RSM</div>
+            <div class="loading-text">Building Excellence Since 1999</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🏗️</div>
+                <h2>RSM Developers</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#rates" class="nav-link">Rate List</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <button class="cta-btn" onclick="scrollToSection('contact')">
+                    <span>Start Project</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="background-slider">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFraXN0YW5pJTIwaG91c2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uc3RydWN0aW9ufGVufDB8fDB8fHww&w=1000&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW9kZXJuJTIwaG91c2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80')"></div>
+            </div>
+            <div class="background-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>EST. 1999</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">Building Pakistan's</span>
+                <span class="title-line">Future With Excellence</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                25+ years of transforming Lahore's skyline with premium construction solutions. 
+                Licensed, EPA approved construction company with 6 months warranty on all projects.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('rates')">
+                    <span>View Rate List</span>
+                    <div class="btn-icon">→</div>
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">
+                    <span>Free Consultation</span>
+                </button>
+            </div>
+            
+            <div class="hero-scroll">
+                <div class="scroll-indicator"></div>
+                <span>Scroll to Explore</span>
+            </div>
+        </div>
+        
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-count="200">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="25">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="500">0</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About RSM Developers</h2>
+                <p class="section-subtitle">
+                    Licensed construction company with EPA approval and 6 months warranty on all projects
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="company-info">
+                        <h3>Professional Construction Services</h3>
+                        <p>RSM Developers is a fully licensed and EPA-approved construction company with over 25 years of experience in delivering premium construction projects across Pakistan.</p>
+                        
+                        <div class="certifications">
+                            <div class="certification-item">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h4>Licensed Company</h4>
+                                    <p>Fully registered and licensed construction company</p>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>EPA Approved</h4>
+                                    <p>Environment Protection Agency approved construction practices</p>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>6 Months Warranty</h4>
+                                    <p>Comprehensive warranty on all construction projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Modern Pakistani Home" class="about-image">
+                        <div class="image-overlay">
+                            <h3>25 Years of Trust</h3>
+                            <p>Building dreams across Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approved Areas -->
+            <div class="approved-areas">
+                <h3>Approved Construction Areas</h3>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <i class="fas fa-city"></i>
+                        <h4>Lahore</h4>
+                        <p>DHA, Gulberg, Bahria Town, Model Town</p>
+                    </div>
+                    <div class="area-card">
+                        <i class="fas fa-building"></i>
+                        <h4>Islamabad</h4>
+                        <p>Bahria Town, DHA, Giga Mall Areas</p>
+                    </div>
+                    <div class="area-card">
+                        <i class="fas fa-home"></i>
+                        <h4>Karachi</h4>
+                        <p>DHA, Clifton, Bahria Town</p>
+                    </div>
+                    <div class="area-card">
+                        <i class="fas fa-university"></i>
+                        <h4>Rawalpindi</h4>
+                        <p>Bahria Town, DHA, Askari</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rate List Section -->
+    <section id="rates" class="rates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Construction Rate List</h2>
+                <p class="section-subtitle">Transparent pricing for all construction services</p>
+            </div>
+            
+            <div class="rates-grid">
+                <div class="rate-category">
+                    <h3>Residential Construction</h3>
+                    <div class="rate-table">
+                        <div class="rate-item">
+                            <span class="service-name">Basic Construction</span>
+                            <span class="service-price">Rs. 2,500/sq ft</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="service-name">Standard Construction</span>
+                            <span class="service-price">Rs. 3,200/sq ft</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="service-name">Premium Construction</span>
+                            <span class="service-price">Rs. 4,500/sq ft</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="service-name">Luxury Construction</span>
+                            <span class="service-price">Rs. 6,000/sq ft</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rate-category">
+                    <h3>Commercial Construction</h3>
+                    <div class="rate-table">
+                        <div class="rate-item">
+                            <span class="service-name">Office Buildings</span>
+                            <span class="service-price">Rs. 3,800/sq ft</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="service-name">Shopping Malls</span>
+                            <span class="service-price">Rs. 4,200/sq ft</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="service-name">Commercial Plazas</span>
+                            <span class="service-price">Rs. 3,500/sq ft</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rate-category">
+                    <h3>Additional Services</h3>
+                    <div class="rate-table">
+                        <div class="rate-item">
+                            <span class="service-name">Architectural Design</span>
+                            <span class="service-price">Rs. 50,000+</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="service-name">Interior Design</span>
+                            <span class="service-price">Rs. 1,500/sq ft</span>
+                        </div>
+                        <div class="rate-item">
+                            <span class="service-name">Renovation Work</span>
+                            <span class="service-price">Rs. 2,000/sq ft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rate-note">
+                <p><strong>Note:</strong> All prices are subject to change based on material quality, location, and project specifications. 6 months warranty included on all construction work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Construction Services</h2>
+                <p class="section-subtitle">Comprehensive construction solutions with quality assurance</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Construction</h3>
+                    <p>Complete house construction services including planning, design, and execution of residential projects.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Single Family Homes</li>
+                        <li><i class="fas fa-check"></i> Apartments & Flats</li>
+                        <li><i class="fas fa-check"></i> Housing Societies</li>
+                        <li><i class="fas fa-check"></i> Luxury Villas</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Construction</h3>
+                    <p>Professional commercial construction services for offices, malls, and business centers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Office Buildings</li>
+                        <li><i class="fas fa-check"></i> Shopping Malls</li>
+                        <li><i class="fas fa-check"></i> Business Centers</li>
+                        <li><i class="fas fa-check"></i> Commercial Plazas</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Renovation & Repair</h3>
+                    <p>Complete renovation and repair services to transform your existing spaces.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Home Renovation</li>
+                        <li><i class="fas fa-check"></i> Structural Repair</li>
+                        <li><i class="fas fa-check"></i> Interior Remodeling</li>
+                        <li><i class="fas fa-check"></i> Extension Work</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Architectural Design</h3>
+                    <p>Professional architectural design services for innovative and functional spaces.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Building Design</li>
+                        <li><i class="fas fa-check"></i> Space Planning</li>
+                        <li><i class="fas fa-check"></i> 3D Visualization</li>
+                        <li><i class="fas fa-check"></i> Construction Drawings</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Interior Design</h3>
+                    <p>Complete interior design solutions to create beautiful and functional living spaces.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Interior Planning</li>
+                        <li><i class="fas fa-check"></i> Material Selection</li>
+                        <li><i class="fas fa-check"></i> Furniture Design</li>
+                        <li><i class="fas fa-check"></i> Lighting Design</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Construction Management</h3>
+                    <p>Professional project management services to ensure timely and quality construction.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Project Planning</li>
+                        <li><i class="fas fa-check"></i> Quality Control</li>
+                        <li><i class="fas fa-check"></i> Budget Management</li>
+                        <li><i class="fas fa-check"></i> Timeline Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Completed Projects</h2>
+                <p class="section-subtitle">Showcasing our premium construction projects across Pakistan</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vZGVybiUyMGFwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="Luxury Apartments">
+                    </div>
+                    <div class="project-content">
+                        <h3>Gulberg Luxury Apartments</h3>
+                        <p>24-story premium residential complex with modern amenities</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt"></i> Gulberg, Lahore</span>
+                            <span><i class="fas fa-calendar"></i> Completed 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbW1lcmNpYWwlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="Commercial Building">
+                    </div>
+                    <div class="project-content">
+                        <h3>Commercial Square</h3>
+                        <p>State-of-the-art business center with premium office spaces</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt"></i> DHA Phase 6</span>
+                            <span><i class="fas fa-calendar"></i> Completed 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwdmlsbGF8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Luxury Villa">
+                    </div>
+                    <div class="project-content">
+                        <h3>Executive Villas</h3>
+                        <p>Luxury villas with custom architecture and premium amenities</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt"></i> Bahria Town</span>
+                            <span><i class="fas fa-calendar"></i> Ongoing Project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Start Your Project With Us</h2>
+                <p class="section-subtitle">Get in touch for premium construction solutions and free consultation</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Owner</strong>
+                                <span>Zeshan Ahmed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Phone</strong>
+                                <a href="tel:03010087774">0301-0087774</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Email</strong>
+                                <a href="mailto:info@rsmdevelopers.com">info@rsmdevelopers.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Office Address</strong>
+                                <span>Siddique Centre, Jail Rd, Block H Gulberg 2, Lahore</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="working-hours">
+                        <h4>Working Hours</h4>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>Monday - Saturday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sunday</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h3>Send us a Message</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Your Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Select Service</option>
+                                    <option value="residential">Residential Construction</option>
+                                    <option value="commercial">Commercial Projects</option>
+                                    <option value="renovation">Renovation Services</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <div class="btn-icon">→</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo-icon">🏗️</div>
+                        <div class="brand-info">
+                            <h3>RSM Developers</h3>
+                            <p>Licensed & EPA Approved Construction Company with 25+ years of excellence in building premium residential and commercial projects across Pakistan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Quick Links</h4>
+                            <a href="#home">Home</a>
+                            <a href="#about">About Us</a>
+                            <a href="#rates">Rate List</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#services">Services</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Services</h4>
+                            <a href="#services">Residential Construction</a>
+                            <a href="#services">Commercial Projects</a>
+                            <a href="#services">Renovation Services</a>
+                            <a href="#services">Architectural Design</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Contact</h4>
+                            <a href="tel:03010087774">0301-0087774</a>
+                            <a href="mailto:info@rsmdevelopers.com">Email Us</a>
+                            <a href="#contact">Visit Office</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 RSM Developers. All rights reserved. | Licensed Construction Company | EPA Approved | 6 Months Warranty</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
